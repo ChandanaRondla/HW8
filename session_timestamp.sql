@@ -1,4 +1,4 @@
-with filtered_sessions as (
+with filtered_user_sessions as (
     select
         sessionId,
         ts
@@ -6,4 +6,4 @@ with filtered_sessions as (
     where sessionId is not null
 )
 select *
-from filtered_sessions
+from filtered_user_sessions
